@@ -1,42 +1,48 @@
 # Rural Bank Account Management System (RBAMS)
 
 ## Overview
-This Java console-based application simulates a basic banking system for the Rural Bank of Nepal (RBN). It helps manage customer savings and current accounts while demonstrating Object-Oriented Programming (OOP) principles and custom exception handling.
+
+
+It is a Java console application that is modeling a minimal banking system for the Rural Bank of Nepal (RBN). The application supports customer savings and current account management with Object-Oriented Programming (OOP) principles and custom exception handling illustration.
 
 ## Features
-- Supports multiple accounts (Savings and Current) per customer.
-- Allows deposit and withdrawal operations.
-- Applies interest to savings accounts.
-- Handles overdraft limit for current accounts.
-- Throws and handles custom exceptions (e.g., InsufficientBalanceException).
-- Simple console-based menu interaction.
+
+- One or more accounts for each customer.
+- Handling of deposit and withdrawal transactions.
+- Interest on savings accounts calculation.
+- Overdraft limit handling in current accounts.
+- User-defined exception throwing and handling.
+- Straightforward console-based menu-driven interaction.
 
 ## Class Design and OOP Implementation
 
-### 1. `BankAccount` (Abstract Class)
-- Attributes: `accountHolderName`, `accountNumber`, `balance`
-- Methods: `deposit()`, `withdraw()` (abstract), `displayAccountDetails()`
-- Demonstrates **abstraction** and **inheritance**
 
-### 2. `SavingsAccount` and `CurrentAccount`
-- Inherit from `BankAccount`
-- `SavingsAccount`: Adds interest with `addInterest()` method
-- `CurrentAccount`: Supports overdraft limit
-- Showcases **polymorphism** via overridden `withdraw()`
+### 1. The Abstraction Class `BankAccount`
+
+Among the members are `accountHolderName`, `accountNumber`, and `balance`.
+`deposit()`, `withdraw()` (abstract), and `displayAccountDetails()` are the methods.
+
+ An example of **inheritance** and **abstraction** 
+
+### 2. `CurrentAccount` and `SavingsAccount`
+
+ Extension of {BankAccount`
+ The `addInterest()` method is used to add interest to the savings account.
+ - `CurrentAccount`: Overdraft protection is enabled.
+ By overriding `withdraw()`, **polymorphism** is demonstrated. 
 
 ### 3. `Customer`
-- Aggregates multiple `BankAccount` objects (shows **aggregation**)
-- Maintains customer-specific details
+
+ As an illustration of **aggregation**, this group of several `BankAccount` objects is stored.
+
+ - Preserves client information 
 
 ### 4. `InsufficientBalanceException`
-- Custom checked exception thrown for invalid withdrawals
 
-### 5. `RBAMS` (Main class)
-- Menu-driven interface for user interaction
-- Handles user input and transaction flow
-- Demonstrates exception handling and **encapsulation**
+ Unauthorized withdrawals are supported by the manually built checked exception
 
-## How to Run
-1. Compile all `.java` files:
-   ```bash
-   javac *.java
+ ### 5. `RBAMS` (Main class).
+
+
+ An interface that is graphical and menu-based oversees user input and transactions.
+ **Encapsulation** and exception handling are demonstrated.

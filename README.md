@@ -46,3 +46,15 @@ Among the members are `accountHolderName`, `accountNumber`, and `balance`.
 
  An interface that is graphical and menu-based oversees user input and transactions.
  **Encapsulation** and exception handling are demonstrated.
+
+## Screenshots
+
+### 1. Deposit Operation
+![Deposit Success](screenshots/deposit_success.png)
+
+### 2. Withdrawal with Exception
+![Withdrawal Exception](screenshots/withdrawal_exception.png)
+
+### 3. Interest Addition
+![Interest Added](screenshots/interest_added.png)
+
