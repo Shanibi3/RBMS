@@ -39,7 +39,9 @@ Among the members are `accountHolderName`, `accountNumber`, and `balance`.
 
 ### 4. `InsufficientBalanceException`
 
- Unauthorized withdrawals are supported by the manually built checked exception ### 5. `RBAMS` (Main class).
+ Unauthorized withdrawals are supported by the manually built checked exception
+
+ ### 5. `RBAMS` (Main class).
 
 
  An interface that is graphical and menu-based oversees user input and transactions.
